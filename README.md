@@ -1,66 +1,38 @@
-## Foundry
+# METACRAFTERS ETH + AVAX PROOF: Intermediate EVM Course
+## MODULE: Functions and Errors - ETH + AVAX
+## DAPP NAME: SIMPLEDAPP.SOL
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This program is a final assesment for the above mentioned module and as required is a simple smart contract that makes use of all 3 statements (assert, require and revert), In order to properly practice what was thaught in this module i also implemented events and modifiers. 
 
-Foundry consists of:
+## Description
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+This Solidity program is a simple implementation of a token transfer dapp where users register, mint 100 tokens to them selves for free then are able to transfer these tokens to one another as long as the receiver is also registered on the smart contract. 
 
-## Documentation
 
-https://book.getfoundry.sh/
+## CONTRACT ADDRESSES (GOERLI)
+- SIMPLEDAPP CONTRACT ADDRESSES: [0xfEC609820171F36c92e8C20311fAD75De6a5d681](https://goerli.etherscan.io/address/0xfec609820171f36c92e8c20311fad75de6a5d681)
 
-## Usage
 
-### Build
 
-```shell
-$ forge build
-```
+## Executing program
+#### STEP 1
+- NAVIGATE TO THIS PROJECT ON ETHERSCAN BY USING THIS [LINK](https://goerli.etherscan.io/address/0xfec609820171f36c92e8c20311fad75de6a5d681#writeContract)
 
-### Test
+#### STEP 2
+- REGISTER BY CALLING THE REGISTER FUNCTION AND PASSING YOUR NICKNAME.
 
-```shell
-$ forge test
-```
+#### STEP 3
+- MINT TOKENS TO YOURSELF BY PCALLING THE MINT FUNCTION.
 
-### Format
+#### STEP 3
+- TRANSFER TOKENS WITHIN FRIENDS AS LONG AS THEY ARE ALSO REGISTERED ON THE SMARTCONTRACT.
 
-```shell
-$ forge fmt
-```
+## Authors
 
-### Gas Snapshots
+Idogwu Chinonso
+[@metacraftersio](https://twitter.com/ChinonsoIdogwu)
 
-```shell
-$ forge snapshot
-```
 
-### Anvil
+## License
 
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+This project is licensed under the MIT License - see the LICENSE.md file for details
